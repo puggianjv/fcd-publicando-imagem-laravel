@@ -20,6 +20,7 @@ services:
     - redis
 
  nginx:
+  # entrypoint: dockerize -template ./.docker/nginx/nginx-template.conf:nginx/nginx.conf ./.docker/nginx/entrypoint.sh
   build: .docker/nginx
   container_name: nginx
   environment:
